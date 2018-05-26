@@ -106,11 +106,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 Вы с легкостью можете перевести число из троичной в пятеричную или даже из семеричной в семнадцатеричную.
 Калькулятор умеет переводить числа из любой системы счисления в любую другую.
 
-<div class="w3-container w3-blue">
-  <h2>Input Form</h2>
-</div>
-
-<form class="w3-container">
+    
+ <form class="w3-container w3-card-4 w3-light-grey">
+  <h2>Bordered Input</h2>
 <p> Введите число  <input type="text" id="n1"/> <br> </p>		    
                 
 		<p> Виберите систему исчесления исходного числа  <select id="operators1"> </p> 
@@ -156,6 +154,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 		<br><br>
 	        <button onclick="calc()">Перевести!</button>
         <p style="color:red"> Результат: <input type="text" id="result"/> </p>
+	 
+  <input class="w3-input w3-border" name="last" type="text"></p>
+</form>    
+	    
+<form class="w3-container">
+
     </div>
   </div>  
 </form>
