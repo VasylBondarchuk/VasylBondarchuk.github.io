@@ -1,50 +1,165 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-div.container {
-    width: 75%;
-    border: 3px solid gray;
-}
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: green;
-    clear: left;
-    text-align: center;
-}
-
-nav {
-    float: left;
-    max-width: 260px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
-}
-
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+  color:black;
 }
 </style>
-</head>
-
 <body>
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+	
+      <h1 class="w3-text-teal" style="color:black"> ОНЛАЙН КАЛЬКУЛЯТОР</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="w3-third w3-container" style="background-color:rgb(192,192,192);">
+      <p class="w3-border w3-padding-large w3-padding-22 w3-center">ОНЛАЙН КАЛЬКУЛЯТОР</p>
+      <p> Введіть число  <input type="text" id="n1"/> <br> </p>		    
+                
+		<p> Виберіть систему числення вхідного числа  <select id="operators1"> </p> 
+            
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+			<option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+			<option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+			<option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+			<option value="16">16</option>
+        	
+        </select> 
+		<br>
+        
+		<p> Виберіть систему числення вихідного числа <select id="operators2"> </p>
+		
+		           
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+			<option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+			<option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+			<option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+			<option value="16">16</option>
+        </select>
+		<br><br>
+	        <button onclick="calc()">Конвертувати!</button>
+        <p> Результат: <input type="text" id="result"/> </p>
+    </div>
+  </div>
+
+  
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
 <script>
-             
-            function calc()
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+
+function calc()
             {
                 var symbols = "0123456789ABCDEF";//символи систем числення				
 				var inputNumber = document.getElementById('n1').value;//введення значення числа для конвертування
@@ -116,92 +231,7 @@ article {
 	            if (outputNumber10 > 9 && outputNumber10 < outputSystem)
 				{outputNumber = symbols.substr(10,6).substr(outputNumber10 - 10,1);}					
 				document.getElementById('result').value = outputNumber;}
-        </script>       
-
-
-<div class="container">
-
-<header>
-   <h1> Перевод чисел из одной системы счисления в другую </h1>
-</header>
-  
-<nav>
-  <ul>
-    <li><a href="how to use.html"> Как использовать конвертер</a></li>
-    <li><a href="how to convert.html">Как это работает?</a></li>
-    <li><a href="systems.html"> Системы исчисления</a></li>
-  </ul>
-</nav>
-
-
-  <h1>Translation of numbers from one number system to another online</h1>
-	
-        <p> INPUT YOUR NUMBER <input type="text" id="n1"/> <br> </p>		    
-                
-		<p> CHOOSE YOUR INPUT SYSTEM <select id="operators1"> </p> 
-            
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-			<option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-			<option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-			<option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-			<option value="16">16</option>
-        	
-        </select> 
-		<br>
-        
-		<p> CHOOSE YOUR OUTPUT SYSTEM <select id="operators2"> </p>
-		
-		           
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-			<option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-			<option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-			<option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-			<option value="16">16</option>
-        </select>
-		<br><br>
-	        <button onclick="calc()">CONVERT!</button>
-        <p> THE FINAL RESULT: <input type="text" id="result"/> </p>
-	    
-
-<p> <blockquote> Numeral system, any of various sets of symbols and the rules for using them to represent numbers,
-which are used to express how many objects are in a given set. Thus, the idea of “oneness” can be
-represented by the Roman numeral I, by the Greek letter alpha α (the first letter) used as a numeral,
-by the Hebrew letter aleph (the first letter)used as a numeral, or by the modern numeral 1, which is 
-Hindu-Arabic in origin.</blockquote></p>
-</article>
-
-<footer>This site is created by V. Bondarchuk</footer>
-
-</div>
+</script>
 
 </body>
 </html>
-
-
-
-
-
-        
-         
-    
-    
