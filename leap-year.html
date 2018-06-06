@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-<title>Генератор таблиц Шульте</title>
+<title>MY FIRST WEB PAGE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,7 +10,8 @@
 
 
 <head>
-<link rel="stylesheet" type="text/css" href="shulte.css">
+<link rel="stylesheet" type="text/css" href="leap-year.css">
+<script src="leap-year.js"></script>
 </head>
 <body>
 
@@ -38,7 +39,7 @@
   <a class="w3-bar-item w3-button w3-hover-black" href="shulte-generator.html">Таблицы Шульте <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
   <a class="w3-bar-item w3-button w3-hover-black" href="countdown.html"> Обратный отсчёт <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
   <a class="w3-bar-item w3-button w3-hover-black" href="leap-year.html"> Кол-во дней <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
-  </nav>
+</nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -51,35 +52,31 @@
 	
  
 <ul>
-  <li><a class="active" href="shulte-generator.html">Генератор таблиц Шульте</a></li>
-  <li><a href="how-to-shulte.html"> Как это работает?</a></li>
-  <li><a href="shulte-theory.html">Теория</a></li>
+  <li><a href="leap-year.html">Калькулятор количества дней</a></li>
+  <li><a href="how-leap-year.html">Как это работает?</a></li>
+  <li><a href="leap-year-theory.html">Теория</a></li>
 </ul>
+
 	    
-      <h1> Как использовать генератор таблиц Шульте </h1>
-	  
-<p style="font-size:20px;text-align: justify;" >
+      <h1> Как использовать калькулятор количества дней  </h1>
 
-Таблицы Шу́льте (англ. Schulte Table) — таблицы со случайно расположенными объектами
-(обычно числами или буквами). Регулярные упражнения с таблицами позволяют улучшить
-периферическое зрение, что важно, например, для скорочтения.
-</p>
-<p style="font-size:20px;text-align: justify;" >
-Для динамической генерации таблицы шульте 5 Х 5 нажмите "Начать работу" и на окрывшейся странице нажмите "Генерировать".
-Также вы можете использовать таймер для учёта своего прогресса.
-</p>
+<p style="font-size:20px;text-align: justify;">
 
+Введите год (от 0) и нажмите кнопку "Узнать", количество дней в данном году (365 или 366). 
+
+</p>
+ 
+<p> Введите год  <input type="text" id="n1"/> <br> </p>		    
+ 
 	<div>
-	<a href="shulte-generator-2.html"><button class="button"> Начать работу </button></a>         
-	</div>
-<br>
-<h3 id="demo"></h3>
-<br>	   
-<br>
-</div>
-	<!-- Add font awesome icons -->
+	<button class="button" onclick="getDays()">Узнать! </button>
+    </div>
+
+<h2 id="year"></h2>
+ 
 <!-- END MAIN -->
-</div>
+
+<!-- FOOTER -->
 
 <div class="footer">
 
