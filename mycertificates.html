@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Мои сертификаты</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+<link rel="stylesheet" type="text/css" href="certificates.css">
+</head>
+
+<body>
+<!-- Navbar -->
+
+ <div class="w3-round w3-teal" class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Главная</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Новости</a>
+    <a href="mycertificates.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Мои сертификаты</a>
+    <a href="contacts.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Контакты</a>
+   </div>
+</div> 
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Мои работы</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="calculator_numbers.html">Перевод чисел</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="calculator - temp.html">Перевод температур</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="calculator - fibonacci.html">Числа Фибоначчи</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="shulte-generator.html">Таблицы Шульте <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="countdown.html"> Обратный отсчёт <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="WEB-certificate.png" style="width:100%">
+  <div class="text"> https://courses.prometheus.org.ua:18090/cert/958a34f903964a35863fdbabe7c73481</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Python-certificate.png" style="width:100%">
+  <div class="text">https://courses.prometheus.org.ua:18090/cert/76adb90233354ecda82d63a58a3dda6b</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Java-certificate.png" style="width:100%">
+  <div class="text">https://courses.prometheus.org.ua:18090/cert/3b3dea247bf0447a8a2fa92712c78745</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="CS50-certificate.png" style="width:100%">
+  <div class="text">https://courses.prometheus.org.ua:18090/cert/74e8d71e40194eb488d7599e0b3f45f1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="english-certificate.png" style="width:100%">
+  <div class="text">https://courses.prometheus.org.ua:18090/cert/c799399355d1433e87edcae49dc0fa1a</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

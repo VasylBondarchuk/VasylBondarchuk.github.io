@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<title>MY FIRST WEB PAGE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="numbers.css">
+<script src="numbers.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+
+ <div class="w3-round w3-teal" class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Главная</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Новости</a>
+    <a href="mycertificates.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Мои сертификаты</a>
+    <a href="contacts.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Контакты</a>
+   </div>
+</div> 
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Мои работы</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="calculator_numbers.html">Перевод чисел</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="calculator - temp.html">Перевод температур</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="calculator - fibonacci.html">Числа Фибоначчи</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="shulte-generator.html">Таблицы Шульте <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="countdown.html"> Обратный отсчёт <span style="font-size:10px;" class="w3-badge w3-red">NEW!</span></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+
+<h4>
+г. Мукачево, 89600, Украина,
+E-mail: teorfiz@gmail.com, 
+Тел.: +380933583840(Viber)
+</h4>	
+	
+<div id="map" style="width:100%;height:550px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(48.45, 22.75); 
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+}
+
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVmnS0htZBiLJrwH_oXxbZDMCAfMaoHI0&callback=myMap"></script>
+	
+
+
+<!-- END MAIN -->
+
+<div class="footer">
+
+<a href="https://www.facebook.com/teorfiz" class="fa fa-facebook"></a>
+<a href="https://plus.google.com/u/0/110162902499089970909" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/vasyl-bondarchuk-7665639a/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UCEfKMCE2xHNCYMuGdLTH5KQ?view_as=subscriber" class="fa fa-youtube"></a>
+<a href="https://join.skype.com/invite/cPhqlAAjcndJ" class="fa fa-skype"></a>
+
+</div>
+
+</body>
+</html>

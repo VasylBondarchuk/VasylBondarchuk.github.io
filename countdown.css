@@ -1,0 +1,52 @@
+p {
+  text-align: centr;
+  font-size: 80px;
+  margin-top:70px;
+  font-family: 'Lobster', cursive;
+}
+body {
+    background-image: url("new_year.png");
+    background-repeat: no-repeat;
+	font-family: 'Lobster', cursive;
+}
+th {
+    text-align: center;
+	font-size: 60px;
+	padding: 20px;
+	font-family: 'Lobster', cursive;
+}
+td {
+    text-align: center;
+	font-size: 85px;
+	padding: 5px;
+	font-family: 'Lobster', cursive;
+	color: red;
+}
+.layer1 {
+    margin-left: 6%; /* Отступ слева */
+    padding: 10px; /* Поля вокруг текста */
+   }
+.layer2 {
+    margin-left: 15%; /* Отступ слева */
+    padding: 5px; /* Поля вокруг текста */
+   }
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}   
